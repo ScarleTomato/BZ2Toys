@@ -1,0 +1,49 @@
+//
+// StratStarting.txt - Vehicles possible to start with in strat/MPI
+//
+// Format of lines: unique identifier, space separator, odf filename, space
+// separator, description Lines starting with // are ignored.
+//
+// NOTE: do not put .odf extension on odf filename; added automatically
+// on loading
+//
+// Also, please remember that these vehicle names will be changed to
+// the appropriate race at runtime, so make sure they exist across
+// races -- for example, ivmbike has no scion counterpart (fvmbike).
+// 
+// Unlike MPVehicles.txt, there are no XSI names. You still need to
+// have a unique identifier for the first part of the name, due to
+// code reasons. No more than 32 craft can be listed here. Also, do
+// *NOT* put more than 6 different types of units in here, as that'll
+// exceed the F#-keys available in MPI. There's a 4-player limit on
+// MPI, which means F8-F10 must be reserved for allies. With the
+// recycler on F1, that means the rest of the groups must fit in
+// F2..F6.
+//
+// The first 2 fields on each line must be 5 characters or longer, or
+// the line will be ignored.
+
+Tug01 ivtup Mortar Rattler
+Tug02 ivtup Mortar Rattler
+Tug03 ivtup Mortar Rattler
+Tug04 ivtup Mortar Rattler
+Scav01 ivscav Scav
+Scav02 ivscav Scav
+Scav03 ivscav Scav
+Scav04 ivscav Scav
+Scout01 ivscout Scout
+Scout02 ivscout Scout
+Scout03 ivscout Scout
+Scout04 ivscout Scout
+Recy01 ivTrecy_ST Thug Recycler
+Recy02 ivTrecy_ST Thug Recycler
+Recy03 ivTrecy_ST Thug Recycler
+Recy04 ivTrecy_ST Thug Recycler
+ATank01 ivatank Assault Tank / Titan
+ATank02 ivatank Assault Tank / Titan
+ATank03 ivatank Assault Tank / Titan
+ATank04 ivatank Assault Tank / Titan
+Serv01 ivserv Service Truck / Healer
+Serv02 ivserv Service Truck / Healer
+Serv03 ivserv Service Truck / Healer
+Serv04 ivserv Service Truck / Healer

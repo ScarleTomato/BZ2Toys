@@ -1,0 +1,20 @@
+[WeaponClass]
+baseName = "gatstab"
+altName = "gpulsebmb_ST_c"
+classLabel = "mortar"
+ordName = "pulsebmb_ST_a"
+wpnName = "Pulse Bomb HV"
+fireSound = "igtow03.wav"
+wpnReticle = "gmdmgun.0"
+wpnCategory = "MORT"
+isAssault = 1
+aiRange = 150
+flashName = "gmgun.flash"
+
+[CannonClass]
+shotDelay = 2.0
+shotVariance = 0.02
+
+
+
+

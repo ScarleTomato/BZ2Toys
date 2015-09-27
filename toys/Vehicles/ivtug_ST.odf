@@ -1,0 +1,6 @@
+[GameObjectClass]
+classLabel = "ivtug"
+scrapValue = 40
+
+[HoverCraftClass]
+velocForward = 30.0

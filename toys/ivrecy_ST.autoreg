@@ -1,0 +1,16 @@
+[RecyclerListMPI]
+ODFName = "ivrecy_ST"
+Description = "!ScarleTomato Variant"
+
+[RecyclerList]
+ODFName = "ivrecy_ST"
+Description = "!ScarleTomato Variant"
+
+[RecyclerListFFA]
+ODFName = "ivrecy_ST"
+Description = "!ScarleTomato Variant"
+
+
+[IAHumanRecyclerList]
+ODFName = "ivrecy_ST"
+Description = "!ScarleTomato Variant"

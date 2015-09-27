@@ -1,0 +1,32 @@
+[GameObjectClass]
+geometryName = "scomtap.xsi"
+classLabel = "jammer"
+maxHealth = 0
+maxAmmo = 0
+powerCost = 0
+unitName = "Jammer"
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+canCollide = 0
+isAssault = 0
+isStealth = 1
+
+armorClass = N
+
+RequireCount = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnired"
+lightHard2 = "hp_light_2"
+lightName2 = "omnired"
+
+[BuildingClass]
+
+[PoweredBuildingClass]
+powerTap1 = "HP_TAP_1"
+powerName = "ibant"
+detectRange = 300
+
+[JammerTowerClass]
+jammerRange = 300.0

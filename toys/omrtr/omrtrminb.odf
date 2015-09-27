@@ -1,0 +1,16 @@
+//Orbital Mortar Beacon by ScarleTomato
+//mortar shell that carries the building
+//shouldn't take too long as this just drops strait to the ground
+//which should be about 0 meters below
+
+[OrdnanceClass]
+classLabel = "spraybomb"
+//rendername = omrtrbeameffectc.render //used to trace the mortar to see where its going
+
+//ammoCost = 0
+lifeSpan = 10
+shotSpeed = 1.0
+
+[SprayBombClass]
+payloadName = "ibomrtrbldg"
+SoundBounce = ""

@@ -1,0 +1,12 @@
+[GameObjectClass]
+classLabel = "ibpagtow"
+scrapCost = 0
+powerCost = 0
+buildTime = 800
+
+upgradeName = ""
+
+buildSupport = "F"
+buildRequire = "F"
+
+requireCount = 0

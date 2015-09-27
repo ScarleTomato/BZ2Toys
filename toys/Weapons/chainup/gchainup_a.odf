@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "mortar"
+//altName = "gchain_c"
+ordName = "chainup_a"
+wpnName = "Chain Mortar"
+fireSound = "gchain01.wav"
+wpnReticle = "gchain"
+wpnCategory = "MORT"
+isAssault = 1
+flashName = "gchain_a.flash"
+aiRange = 295
+needLOS = true
+AllowAimHigh = true
+
+[CannonClass]
+shotDelay = 0.1
+shotVariance = 0.01

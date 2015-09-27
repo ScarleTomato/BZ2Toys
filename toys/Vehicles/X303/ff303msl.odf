@@ -1,0 +1,58 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+
+shotGeometry = "missile01.xsi"
+shotSound = "303msl.wav"
+
+renderName = "ff303msl.render"
+
+xplGround = "ffmslgrnd"
+xplVehicle = "ffmslxpl"
+xplBuilding = "ffmslxpl"
+
+ammoCost = 200
+lifeSpan = 5.0 // 120m
+shotSpeed = 140.0
+
+damageValue(N) = 4500 // none
+damageValue(L) = 3200 // light
+damageValue(H) = 2700 // heavy
+
+damageValue(S) = 1140 // standard
+damageValue(D) = 195 // deflection
+damageValue(A) = 1150 // absorbtion
+
+[MissileClass]
+omegaTurn = 0.5
+
+[ThermalMissileClass]
+coneAngle = 1.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ff303msl.flare"
+renderName2 = "ff303msl.smoke"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 3.0
+finishRadius = 4.0
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor =   "70 70 70 108" //"153 153 153 128"
+finishColor = "153 153 153 0"
+startRadius = 1.0
+finishRadius = 12.0
+animateTime = 3.0
+emitDelay = 0.1
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.6 0.6 0.6"
+emitLife = 4.0

@@ -1,0 +1,26 @@
+[OrdnanceClass]
+classLabel = "missile"
+
+shotGeometry = "iorckt00.xsi"
+xplGround = "xtaggnd_c"
+xplVehicle = "xtagcar_c"
+xplBuilding = "xtagbld_c"
+
+renderName = "fafmsl_a.render"
+
+ammoCost = 10
+lifeSpan = 30
+shotSpeed = 300.0
+
+damageValue(N) = 6750 // none
+damageValue(L) = 5625 // light
+damageValue(H) = 4500 // heavy
+
+damageValue(S) = 5625 // standard
+damageValue(D) = 4500 // deflection
+damageValue(A) = 6750 // absorbtion
+
+[MissileClass]
+omegaTurn = 2
+omegaWaver = 1.0
+rateWaver = 3.0

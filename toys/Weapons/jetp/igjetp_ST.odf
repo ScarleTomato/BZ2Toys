@@ -1,0 +1,8 @@
+[WeaponClass]
+classLabel = "igjetp"
+wpnName = "Thruster"
+//localAmmo = 0
+canSelect = true
+
+[JetPackClass]
+ammoCost = 100

@@ -1,0 +1,25 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "ff303msl"
+wpnName = "FF Rocket"
+fireSound = "303mslf.wav"
+wpnReticle = "gfafmsl"
+wpnCategory = "ROCK"
+isAssault = 1
+flashName = "gffmsl303.flash"
+aiRange = 550
+
+[CannonClass]
+shotDelay = 5.0 // 1/sec
+shotAlternate = 1
+
+[flash]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor =   "70 70 70 108" //"153 153 153 128"
+finishColor = "153 153 153 0"
+startRadius = 1.0
+finishRadius = 15.0
+animateTime = 5.0
+emitLife = 5.0

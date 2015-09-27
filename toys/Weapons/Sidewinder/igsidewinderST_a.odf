@@ -1,0 +1,51 @@
+[WeaponClass]
+classLabel = "radarlauncher"
+
+// external geometry
+geometryName = "igbzka_skel.xsi"
+geometryScale = 0.12
+animCount = 4
+animName1 = "stand"
+animFile1 = "igbzka_skel.xsi"
+animName2 = "walk"
+animFile2 = "igbzka_skel.xsi"
+animName3 = "crouch"
+animFile3 = "igbzka_skel.xsi"
+animName4 = "jump"
+animFile4 = "igbzka_skel.xsi"
+
+// cockpit geometry
+cockpitName = "iwbazo_cockpit_skel.xsi"
+cockpitScale = 0.12
+animCountCockpit = 4
+animNameCockpit1 = "stand"
+animFileCockpit1 = "iwbazo_cockpit_skel.xsi"
+animNameCockpit2 = "walk"
+animFileCockpit2 = "iwbazo_cockpit_run.xsi"
+animNameCockpit3 = "crouch"
+animFileCockpit3 = "iwbazo_cockpit_skel.xsi"
+animNameCockpit4 = "jump"
+animFileCockpit4 = "iwbazo_cockpit_skel.xsi"
+
+ordName = "sidewinderST_a"
+wpnName = "Sidewinder"
+fireSound = "hrckt01.wav"
+wpnReticle = "gbazooka"
+wpnCategory = "HAND"
+localAmmo = 20
+isAssault = 1
+isFlying = 1
+altName = "igsidewinderST_c"
+
+
+[LauncherClass]
+lockRange = 200.0
+shotDelay = 0
+lockDelay = 0
+coneAngle = 0.05
+lockingReticle = "gshadow.A"
+lockingSound = "cfigon.wav"
+lockedReticle = "gshadow.B"
+lockedSound = "cfigclk.wav"
+targetCount = 3
+targetReticle = "gshadow.1"

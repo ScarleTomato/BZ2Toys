@@ -1,0 +1,28 @@
+[GameObjectClass]
+geometryName = "aphand00.xsi"
+classLabel = "wpnpower"
+scrapCost = 60
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+
+unitName = "ISDF Sidewinder"
+aiName = "PowerUpProcess"
+
+requireCount = 1
+requireName1 = "ibarmo"
+requireText1 = "Build Armory"
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnipur-pil"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "igsidewinderST_c"

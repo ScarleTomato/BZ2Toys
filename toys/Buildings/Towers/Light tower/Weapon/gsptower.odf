@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gtower"
+ordName = "towersp"
+wpnName = "SP Stabber"
+fireSound = "spstab01.wav"
+wpnReticle = "gplasma"
+wpnCategory = "CANN"
+isAssault = 0
+aiRange = 150
+
+[CannonClass]
+shotDelay = 0.5 // 2/sec
+shotAlternate = 1

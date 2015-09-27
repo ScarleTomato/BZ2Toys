@@ -1,0 +1,2 @@
+"C:\Program Files\Battlezone II\bzone.exe" +host 17770 +name "Host" /nointro /poweruser /config bzoneST.cfg
+"C:\Program Files\Battlezone II\bzone.exe" +join 192.168.2.10:17771 +name "Joiner" /nointro /poweruser /config bzoneST.cfg

@@ -1,0 +1,23 @@
+[OrdnanceClass]
+classLabel = "mortar_c"
+shotGeometry = ""
+
+shotSound = ""
+
+xplGround = "xplsbmbxpl_ST"
+xplVehicle = "xplsbmbxpl_ST"
+xplBuilding = "xplsbmbxpl_ST"
+
+renderName = "mgun.render"
+
+ammoCost = 300
+lifeSpan = 1e30
+shotSpeed = 50.0
+
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion

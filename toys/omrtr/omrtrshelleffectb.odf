@@ -1,0 +1,16 @@
+//Orbital Mortar Beacon by ScarleTomato
+//flare to shoot off a whole bunch of spraybombs to designate where the shells will come down
+
+[GameObjectClass]
+geometryName = ""
+classLabel = "omrtrbeameffectb"
+unitName = ""
+explosionName = ""
+
+[MineClass]
+lifeSpan = 3
+
+[FlareMineClass]
+payloadName = "omrtrshelleffectc"
+shotDelay = .04
+shotVariance = 0.15

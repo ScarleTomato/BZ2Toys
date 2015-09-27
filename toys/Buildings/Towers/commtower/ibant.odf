@@ -1,0 +1,18 @@
+[GameObjectClass]
+geometryName = "sftap.xsi"
+classLabel = "sensor"
+geometryScale = 0.9
+animCount = 0
+scrapCost = 15
+scrapValue = 5
+maxHealth = 0
+powerCost = 0
+maxAmmo = 0
+unitName = "Reciever"
+canCollide = 0
+isAssault = 0
+isStealth = 1
+
+armorClass = H
+
+[BuildingClass]

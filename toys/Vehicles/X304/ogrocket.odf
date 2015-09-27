@@ -1,0 +1,21 @@
+[WeaponClass]
+classLabel = "imagelauncher"
+ordName = "orocket"
+wpnName = "Photon Torpedo MkV"
+fireSound = "ogrocket.wav"
+wpnReticle = "gshadow.0"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 600
+
+[LauncherClass]
+lockRange = 600.0  // was 170 GEC
+shotDelay = 3.0
+lockDelay = .75
+coneAngle = 0.1
+lockingReticle = "gshadow.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gshadow.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gshadow.1"

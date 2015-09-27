@@ -1,0 +1,101 @@
+//
+// MPVehicles.txt - listing of multiplayer vehicles usable in BZ2
+//
+// Format of lines: xsi filename, space separator, odf filename, space separator, description
+// Lines starting with // are ignored. 
+//
+// Tip: do not put .odf extension on odf filename; added automatically on loading
+// 
+[MPVehicles]
+xsi1 = "ivscout00.xsi"
+cfg1 = "ivscout"
+Description1 = "Thunderbolt"
+
+xsi2 = "ivtank00.xsi"
+cfg2 = "ivtank"
+Description2 = "Sabre"
+
+xsi3 = "ivmbik00.xsi"
+cfg3 = "ivmbike"
+Description3 = "Jackal"
+
+xsi4 = "ivmisl00.xsi"
+cfg4 = "ivmisl"
+Description4 = "Avenger"
+
+xsi5 = "fvsent_skel.xsi"
+cfg5 = "fvsent"
+Description5 = "Sentry"
+
+xsi6 = "fvscout_skel.xsi"
+cfg6 = "fvscout"
+Description6 = "Drone"
+
+xsi7 = "fvtank_skel.xsi"
+cfg7 = "fvtank"
+Description7 = "Warrior"
+
+xsi8 = "fvlancer_skel.xsi"
+cfg8 = "fvarch"
+Description8 = "Lancer"
+
+xsi9 = "ivatnk00.xsi"
+cfg9 = "ivatank"
+Description9 = "Bulldog"
+
+xsi10 = "ivrckt00.xsi"
+cfg10 = "ivrckt"
+Description10 = "Rocket Tank"
+
+xsi11 = "ivwalk_skel.xsi"
+cfg11 = "ivwalk"
+Description11 = "Attila LM"
+
+xsi12 = "fvtitan_skel.xsi"
+cfg12 = "fvatank"
+Description12 = "Titan"
+
+xsi13 = "ivscout00.xsi"
+cfg13 = "ivscout12_dm"
+Description13 = "1.2-Style Thunderbolt"
+
+xsi14 = "fvscout_skel.xsi"
+cfg14 = "fvscout12_dm"
+Description14 = "1.2-Style Drone "
+
+xsi15 = "ivscout00.xsi"
+cfg15 = "ivscout12"
+Description15 = "1.2-Style Default ISDF"
+
+xsi16 = "fvscout_skel.xsi"
+cfg16 = "fvscout12"
+Description16 = "1.2 Style Default Scion"
+
+xsi17 = "ivphtankm2.xsi"
+cfg17 = "ivphtankm2"
+Description17 = "Enforcer"
+
+xsi18 = "ivgnat00.xsi"
+cfg18 = "ivgna2a"
+Description18 = "Gnat Interceptor"
+
+xsi19 = "ivgnat00.xsi"
+cfg19 = "ivgnat"
+Description19 = "Gnat"
+
+xsi20 = "fvfish.xsi"
+cfg20 = "ivfish"
+Description20 = "Scimitar"
+
+xsi21 = "ivx303.xsi"
+cfg21 = "ivx303"
+Description21 = "X-303 Prometheus"
+
+xsi22 = "ivx304.xsi"
+cfg22 = "ivx304"
+Description22 = "X-304 Dedalus"
+
+xsi23 = "ivtup.xsi"
+cfg23 = "ivtup"
+Description23 = "Mortar Turret"
+  

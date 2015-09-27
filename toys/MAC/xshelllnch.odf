@@ -1,0 +1,150 @@
+// =================
+// Impact from an Orbital Mortar Shell
+// ~scarleTomato
+// =================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 7
+particleClass1 = "xshellgnd.scorch"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xshellgnd.smoke"
+particleCount2 = 20
+particleVeloc2 = "100 10 100"
+particleClass3 = "xshellgnd.fire"
+particleCount3 = 20
+particleVeloc3 = "10.0 100.0 0.0"
+particleClass4 = "xshellgnd.afterburn"
+particleCount4 = 5
+particleVeloc4 = "10.0 20.0 0.0"
+particleClass5 = "xshellgnd.lingeringsmoke"
+particleCount5 = 20
+particleVeloc5 = "50 20 50"
+particleClass6 = "xshellgnd.flash"
+particleCount6 = 2
+particleVeloc6 = "0.0 0.0 0.0"
+particleClass7 = "xshellgnd.groundflash"
+particleCount7 = 2
+particleVeloc7 = "0.0 0.0 0.0"
+
+explSound = "shelimp3.wav"
+damageRadius = 0.0
+damageValue(N) = 1000 // none
+damageValue(L) = 1000 // light
+damageValue(H) = 500 // heavy
+
+damageValue(S) = 500 // standard
+damageValue(D) = 500 // deflection
+damageValue(A) = 500 // absorbtion
+kickradius = 30
+kickomega = 10
+kickveloc = 1
+
+[Fire]
+simulateBase = "sim_smoke"
+lifeTime = 1
+renderBase = "draw_twirl"
+textureName = "fire.tga"
+textureBlend = "one one modulate"
+startColor = "200 180 20 255"
+finishColor = "0 0 0 0" //"0 0 0 0"
+startRadius = 20
+finishRadius = 30
+animateTime = 1
+rotationrate = 2.5
+
+[Shrapnel]
+simulateBase = "sim_ember"
+lifeTime = 0.00375
+renderBase = "draw_twirl_trail"
+textureName = "fire.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 0 255"
+finishColor = "255 100 0 0"
+startRadius = .5
+finishRadius = .5
+animateTime = .05
+emitDelay = 0.001
+emitVelocity = "1.0 0.0 0.0"
+emitVariance = "1.5 1.5 1.5"
+emitLife = .05
+maxdist = 400
+
+[Smoke]
+simulateBase = "sim_smoke"
+lifeTime = 10
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 128"
+finishColor = "0 0 0 0"
+startRadius = 30
+finishRadius = 40
+animateTime = 10
+rotationrate = 5
+
+[LingeringSmoke]
+simulateBase = "sim_dust"
+lifeTime = 60
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 128"
+finishColor = "0 0 0 0"
+startRadius = 30
+finishRadius = 40
+animateTime = 60
+rotationrate = 2
+
+[afterburn]
+simulateBase = "sim_smoke"
+lifeTime = 4
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 255"
+middleColor = "0 0 0 255"
+finishColor = "0 0 0 0"
+startRadius = 30.0
+finishRadius = 30.0
+animateTime = 4
+rotationrate = 2.5
+
+[Flash]
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_sprite"
+textureName = "blast.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 180 255"
+finishColor = "200 200 0 0"
+startRadius = 80.0
+finishRadius = 10.0
+animateTime = 0.2
+rotationRate = 50.0
+
+[GroundFlash]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_planar"
+textureName = "blast.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "200 180 0 0"
+startRadius = 80.0
+finishRadius = 20.0
+animateTime = 0.2
+
+[Scorch]
+simulateBase = "sim_null"
+lifeTime = 30
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 255"
+finishColor = "0 0 0 0"
+startRadius = 80.0
+finishRadius = 80.0
+animateTime = 30

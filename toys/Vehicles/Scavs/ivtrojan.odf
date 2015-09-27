@@ -1,0 +1,11 @@
+[GameObjectClass]
+classLabel = "ivscav"
+explosionName = "xbmbxpl"
+
+requireCount = 1
+requireName1 = "ibarmo"
+requireText1 = "Build Armory"
+
+[ScavengerClass]
+deployClass = ""
+CanScavenge = false

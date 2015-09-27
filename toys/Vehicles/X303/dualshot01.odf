@@ -1,0 +1,21 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = "dualshot01.xsi"
+shotSound = "Ordin_a.wav"
+
+xplGround = "xstabgnd_c"
+xplVehicle = "xstabcar_c"
+xplBuilding = "xmslbld"
+
+ammoCost = 15
+lifeSpan = 3.0 // 100m
+shotSpeed = 200.0
+
+damageValue(N) = 2300 // none // 260
+damageValue(L) = 1500 // light // 240
+damageValue(H) = 500 // heavy // 200
+
+damageValue(S) = 100 // standard // 240
+damageValue(D) = 90 // deflection // 200
+damageValue(A) = 110 // absorbtion // 130

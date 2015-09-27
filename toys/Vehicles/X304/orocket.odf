@@ -1,0 +1,115 @@
+[OrdnanceClass]
+classLabel = "imagemissile"
+shotSound = "orocket.wav"
+
+xplGround = "grorocket"
+xplVehicle = "vhorocket"
+xplBuilding = "vhorocket"
+xplExpire = "exorocket"
+renderName = "orocket.render"
+
+ammoCost = 200
+lifeSpan = 5.0 // 750m
+shotSpeed = 150.0
+
+damageValue(N) = 6000 // none
+damageValue(L) = 5400 // light
+damageValue(H) = 4100 // heavy
+
+damageValue(S) = 2490 // standard
+damageValue(D) = 2465 // deflection
+damageValue(A) = 2500 // absorbtion
+
+[MissileClass]
+omegaTurn = 2.5
+omegaWaver = 0
+omegaRatewaver = 0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "orocket.flare"
+renderName2 = "orocket.smoke"
+renderName3 = "orocket.flame"
+renderName4 = "orocket.light"
+
+[flare]
+simulateBase = "sim_null"
+renderBase = "draw_static"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+//lifeTime = 16 (explosions/weapon flashes only, possibly irrelivent)
+startColor = "255 215 55 510"
+finishColor = "255 215 55 510"
+startRadius = 25
+finishRadius = 25
+emitDelay = .1
+emitDelayVar = 0
+innerRadius = 2
+outerRadius = -2
+segmentTime = .1
+
+
+[smoke]
+simulateBase = "sim_smoke"
+renderBase = "draw_emit"
+//lifeTime = 1.5
+emitName = "orocket.puff"
+emitDelay = 0.01
+emitDelayVar = 0.0
+emitVelocity = "0 0 0"
+emitVariance = "15.0 15.0 15.0"
+emitInherit = "0.0 0.0 0.0"
+
+[puff]
+simulateBase = "sim_null"
+lifeTime = .35
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 193 33 300"
+finishColor = "15 15 15 45"
+startRadius = .5
+finishRadius = 1.0
+animateTime = .25
+
+[flame]
+simulateBase = "sim_smoke"
+renderBase = "draw_emit"
+//lifeTime = 1.5
+emitName = "orocket.fire"
+emitDelay = 0.004
+emitDelayVar = 0.0
+emitVelocity = "-150 0 0"
+emitVariance = "15.0 15.0 15.0"
+emitInherit = "0.0 0.0 0.0"
+
+[fire]
+simulateBase = "sim_null"
+lifeTime = .1
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 196 33 2040"
+finishColor = "255 196 33 0"
+startRadius = .75
+finishRadius = .20
+animateTime = .1
+
+[light]
+simulateBase = "sim_null"
+//lifeTime = 16
+renderBase = "draw_light"
+startColor = "255 193 33 300"
+finishColor = "255 193 33 0"
+startRadius = 40
+finishRadius = 40
+//animateTime = 12
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+lensflare = 0

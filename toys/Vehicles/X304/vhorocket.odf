@@ -1,0 +1,95 @@
+[ExplosionClass]
+classLabel = "explosion" // must be "explosion" to be an explosion file!
+
+explSound = "vhorocket.wav" // sound file played when weapon explodes
+
+damageRadius = 35.0  // how far out damaged is applied (lesses with range)
+
+damageValue(N) = 200 // none
+damageValue(L) = 150 // light
+damageValue(H) = 100 // heavy
+ 
+damageValue(S) = 70 // standard
+damageValue(D) = 150 // deflection
+damageValue(A) = 60 // absorbtion
+
+kickRadius = 5.0
+kickOmega = 10.0
+kickVeloc = 0.0
+
+particleTypes = 3 // number of particle groups (like renders)
+
+particleClass1 = "vhorocket.aura" 
+particleCount1 = 2              
+particleVeloc1 = "0 0 0"  
+particlebias1 = "0 0 0" 
+
+particleClass2 = "vhorocket.fire" 
+particleCount2 = 1              
+particleVeloc2 = "0.0 0.0 0.0"  
+particlebias2 = "15 8 0"
+
+
+particleClass3 = "vhorocket.spark" 
+particleCount3 = 10              
+particleVeloc3 = "40.0 40.0 40.0"  
+particlebias3 = "0 0 -40"
+
+//particleClass3 = "vhorocket.blst" 
+//particleCount3 = 1              
+//particleVeloc3 = "15.0 15.0 15.0"  
+//particlebias3 = "-15 0 0
+
+
+[aura]
+simulateBase = "sim_null"
+lifeTime = .5
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "flare.tga"
+textureBlend = "one one modulate"
+startColor = "255 59 41 510"
+finishColor = "255 59 41 0"
+startRadius = 7.5
+finishRadius = 7.5
+animateTime = .5
+
+
+[fire]
+simulateBase = "sim_null"
+renderBase = "draw_emit"
+lifeTime = .5
+emitName = "vhorocket.flames"
+emitDelay = 0.05
+emitDelayVar = 0.0
+emitVelocity = "0.0 0.0 10.0"
+emitVariance = "20.0 20.0 20.0"
+emitInherit = "0.0 0.0 0.0"
+
+[flames]
+simulateBase = "sim_smoke"
+renderBase = "draw_sprite"
+lifeTime = 1.5
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 59 41 1020"
+finishColor = "255 30 0 0"
+startRadius = 5
+finishRadius = 3
+animateTime = 1.5
+
+[spark]
+simulateBase = "sim_ember"
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = .004
+startColor = "255 255 200 510"
+finishColor = "255 155 0 0"
+startRadius = .5
+finishRadius = .5
+trailTime = 1.5
+segmentTime = .1

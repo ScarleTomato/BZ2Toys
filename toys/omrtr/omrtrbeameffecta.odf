@@ -1,0 +1,34 @@
+//Orbital Mortar Beacon by ScarleTomato
+//spawner to create the mine so it can last longer than the life of the building
+
+[GameObjectClass]
+geometryName = "spawn01.xsi"
+animCount = 1
+animName1 = "loop"
+animFile1 = "spawn01.xsi"
+classLabel = "objectspawn"
+scrapCost = 0
+scrapValue = 6
+maxHealth = 0
+maxAmmo = 0
+unitName = ""
+
+lifespan = 1.0
+
+//making this invisible
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 0.0
+explosionName = ""
+canDetect = 0
+canSelect = 0
+canInteract = 0
+isStealth = 1
+LeaveExplodeScorch = false
+candropscrap = false
+
+[ObjectSpawnClass]
+spawnName = "omrtrbeameffectb"
+spawnDelay = 0.5
+spawnSound = ""

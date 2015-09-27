@@ -1,0 +1,181 @@
+// =============
+// FUN GROUND EXPLOSION
+// =============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 8
+
+particleClass1 = "ffmslgrnd.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "ffmslgrnd.cloud"
+particleCount2 = 1
+particleVeloc2 = "0.0 10.0 0.0"
+
+particleClass3 = "ffmslgrnd.flame"
+particleCount3 = 2
+particleVeloc3 = "0.0 10.0 0.0"
+
+particleClass4 = "ffmslgrnd.light"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "ffmslgrnd.trail"
+particleCount5 = 17
+particleVeloc5 = "13.0 52.0 13.0"
+
+particleClass6 = "ffmslgrnd.posroll"
+particleCount6 = 12
+particleVeloc6 = "5.0 0.0 5.0"
+
+particleClass7 = "ffmslgrnd.billow"
+particleCount7 = 28
+particleVeloc7 = "6.0 6.0 6.0"
+particleBias7 = "0.0 0.0 0.0"
+
+particleClass8 = "ffmslgrnd.ring"
+particleCount8 = 1
+particleVeloc8 = "0.0 0.0 0.0"
+
+///////////////////////////////
+
+explSound = "pnzrxpl.wav"
+damageRadius = 25.0
+
+damageValue(N) = 2800 // none
+damageValue(L) = 1800 // light
+damageValue(H) = 900 // heavy
+
+damageValue(S) = 300 // standard
+damageValue(D) = 300 // deflection
+damageValue(A) = 300 // absorbtion
+
+///////////////////////////////
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 127"
+finishColor = "255 0 0 0"
+startRadius = 0.5
+finishRadius = 12.0
+animateTime = 0.3
+latitudeBands = 8
+longitudeSegments = 16
+
+[cloud]
+simulateBase = "sim_dust"
+lifeTime = 1.0
+renderBase = "draw_emit"
+emitName = "ffmslgrnd.cloudemit"
+emitDelay = 0.5
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "0.0 1.0 0.0"
+
+[cloudemit]
+simulateBase = "sim_smoke"
+lifeTime = 2
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 255"
+finishColor = "0 0 0 0"
+startRadius = 1.5
+finishRadius = 12.5
+animateTime = 2
+
+[flame]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "ffmslgrnd.flameemit"
+emitDelay = 0.1
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[flameemit]
+simulateBase = "sim_smoke"
+lifeTime = .5
+renderBase = "draw_twirl"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = " 255 255 200 255"
+finishColor = "255 0 0 0"
+startRadius = 0.5
+finishRadius = 8
+animateTime = .5
+rotationRate = 5
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_light"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 50.0
+finishRadius = 50.0
+animateTime = 0.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[trail]
+simulateBase = "sim_ember"
+lifeTime = 1.8
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "60 57 55 62"
+finishColor = "20 19 16 0"
+startRadius = 0.8
+finishRadius = 5.5
+animateTime = 1.8
+emitDelay = 0.05
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.9 0.9 0.9"
+emitLife = 1.8
+rotationRate = 0.2
+
+[posroll]
+simulateBase = "sim_dust"
+lifeTime = 3
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "32 32 32 255"
+finishColor = "127 127 127 0"
+startRadius = 4.5
+finishRadius = 1.0
+animateTime = 3
+rotationRate = 2
+
+[billow]
+simulateBase = "sim_smoke"
+lifeTime = 0.8
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "50 50 50 200"
+finishColor = "30 20 10 0"
+startRadius =  0.1
+finishRadius = 6
+animateTime = 1.5
+rotationrate = 2
+
+[ring]
+simulateBase = "sim_null"
+lifeTime = 10.0
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "10 10 10 255"
+finishColor = "10 10 10 0"
+startRadius = 15.0
+finishRadius = 15.0
+animateTime = 90.0

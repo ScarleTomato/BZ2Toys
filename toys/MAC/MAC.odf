@@ -1,0 +1,25 @@
+//Orbital Mortar Beacon by ScarleTomato
+//Contrail for a mortar shell dropping from orbit
+
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+renderName = "MAC.Render"
+xplGround = "xshellgnd"
+xplVehicle = "xshellgnd"
+xplBuilding = "xshellgnd"
+
+ammoCost = 1
+lifeSpan = 10000e-3 //like the beam, goes up instantly about 2000 meters
+shotSpeed = 1e3
+
+[Render]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.1
+startColor = "255 150 100 255"
+finishColor = "10 10 20 0"
+startRadius = 0.3
+finishRadius = 2
+segmentTime = 5

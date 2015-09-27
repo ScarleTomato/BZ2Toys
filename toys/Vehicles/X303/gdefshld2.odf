@@ -1,0 +1,29 @@
+[WeaponClass]
+classLabel = "forcefield"
+ordName = NULL
+wpnName = "Deflector Shield"
+fireSound = "dshield.wav"
+wpnReticle = "gforce.0"
+wpnPriority = 0
+wpnCategory = "SPEC"
+
+[SpecialItemClass]
+activeSound = "sgtow01.wav"
+expireSound = "dshield2.wav"
+ammoCost = 10
+
+[ForceFieldClass]
+renderName = "gdefshld2.render"
+soundAbsorb = "lhit.wav"
+
+[Render]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "50 10 255 255"
+finishColor = "0 0 255 15"
+startRadius = 80.0
+finishRadius = 80.0
+animateTime = 1.0
+latitudeBands = 8
+longitudeSegments = 16

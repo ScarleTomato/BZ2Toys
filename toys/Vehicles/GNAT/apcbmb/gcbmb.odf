@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "mortar"
+ordName = "cbmb"
+wpnName = "Carpet Bomb"
+fireSound = "ghart00.wav"
+wpnReticle = "gseek"
+wpnCategory = "SPEC"
+isAssault = 0
+
+[CannonClass]
+shotDelay = 10.0
+salvoCount = 20
+salvoDelay = 0.02
+shotPitch = 4
+shotVariance = 5

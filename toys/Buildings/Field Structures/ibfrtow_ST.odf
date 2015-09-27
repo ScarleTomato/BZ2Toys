@@ -1,0 +1,10 @@
+[GameObjectClass]
+classLabel = "ibstow"
+scrapCost = 0
+powerCost = 0
+buildTime = 150
+
+buildSupport = "F"
+buildRequire = "F"
+
+requireCount = 0

@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "rbullet"
+altName = "grbulleta"
+wpnName = "Ricochet Bullet"
+fireSound = "flame01.wav"
+wpnReticle = "gminigun"
+wpnPriority = 0
+wpnCategory = "CANN"
+isAssault = 0
+
+[CannonClass]
+shotDelay = .5
+shotVariance = .25
+salvoCount = 15
+salvoDelay = .01

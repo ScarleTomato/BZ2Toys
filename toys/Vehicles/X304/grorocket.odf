@@ -1,0 +1,124 @@
+[ExplosionClass]
+classLabel = "explosion" 
+
+explSound = "xsv2.wav"
+
+damageRadius = 20.0
+
+damageValue(N) = 350 // none
+damageValue(L) = 200 // light
+damageValue(H) = 100 // heavy
+ 
+damageValue(S) = 100 // standard
+damageValue(D) = 250 // deflection
+damageValue(A) = 90 // absorbtion
+
+kickRadius = 16.0
+kickOmega = 5.0
+kickVeloc = 0.0
+
+particleTypes = 5 // number of particle groups (like renders)
+
+particleClass1 = "grorocket.char" 
+particleCount1 = 1              
+particleVeloc1 = "0.0 0.0 0.0"  
+particlebias1 = "0 0 0" 
+
+particleClass2 = "grorocket.cloud" 
+particleCount2 = 8              
+particleVeloc2 = "3 2 3"  
+particlebias2 = "0 0 0" 
+
+particleClass3 = "grorocket.aura" 
+particleCount3 = 2              
+particleVeloc3 = "0 0 0"  
+particlebias3 = "0 0 0" 
+
+particleClass4 = "grorocket.emit" 
+particleCount4 = 1              
+particleVeloc4 = "0 0 0"  
+particlebias4 = "0 0 0" 
+
+particleClass5 = "grorocket.blst" 
+particleCount5 = 8              
+particleVeloc5 = "30 30 30"  
+particlebias5 = "0 0 0"
+
+[char]
+simulateBase = "sim_null"
+lifeTime = 5
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "10 10 10 1020"
+finishColor = "10 10 10 0"
+startRadius = 3.0
+finishRadius = 3.0
+animateTime = 5
+
+[blst]
+simulateBase = "sim_smoke"
+renderBase = "draw_sprite"
+lifeTime = .2
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 167 70 1020"
+finishColor = "255 40 0 0"
+startRadius = 1.5
+finishRadius = 4
+animateTime = .2
+
+[cloud]
+simulateBase = "sim_smoke"
+renderBase = "draw_sprite"
+lifeTime = 3
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "25 25 25 355"
+finishColor = "15 15 15 0"
+startRadius = 2
+finishRadius = 10
+animateTime = 3
+
+[emit]
+simulateBase = "sim_ember"
+renderBase = "draw_emit"
+lifeTime = 1.0
+emitName = "grorocket.flame"
+emitDelay = 0.1
+emitDelayVar = 0.0
+emitVelocity = "0 0 0"
+emitVariance = "6 6 6"
+emitInherit = "0.0 0.0 0.0"
+
+[flame]
+simulateBase = "sim_smoke"
+renderBase = "draw_sprite"
+lifeTime = 1.5
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 25 510"
+finishColor = "255 15 0 0"
+startRadius = 3
+finishRadius = 2
+animateTime = 1.5
+
+[aura]
+simulateBase = "sim_null"
+renderBase = "draw_sprite"
+lifeTime = .2
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "blast.tga"
+textureBlend = "one one modulate"
+startColor = "255 167 70 1020"
+finishColor = "255 40 0 0"
+startRadius = 6.0
+finishRadius = 10.0
+animateTime = .2

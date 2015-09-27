@@ -1,0 +1,11 @@
+[GameObjectClass]
+classLabel = "ivscav"
+scrapCost = 60
+unitName = "Heavy Scav"
+
+requireCount = 1
+requireName1 = "ibfact"
+requireText1 = "Build Factory"
+
+[ScavengerClass]
+deployClass = "ibscup"

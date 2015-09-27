@@ -1,0 +1,257 @@
+[ExplosionClass]
+classLabel = "explosion" // must be "explosion" to be an explosion file!
+
+explSound = "xsv2.wav" // sound file played when weapon explodes
+
+damageRadius = 0.0  // how far out damaged is applied (lesses with range)
+
+damageValue(N) = 1 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+ 
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+
+kickRadius = 0.0
+kickOmega = 0.0
+kickVeloc = 0.0
+
+particleTypes = 5 // number of particle groups (like renders)
+
+particleClass1 = "exorocket.xp2" 
+particleCount1 = 1              
+particleVeloc1 = "0 0 0"  
+particlebias1 = "0 0 150" 
+
+particleClass2 = "exorocket.xp" 
+particleCount2 = 1              
+particleVeloc2 = "0.0 0.0 0.0"  
+particlebias2 = "0 0 150"
+
+
+particleClass3 = "exorocket.spark" 
+particleCount3 = 10              
+particleVeloc3 = "120.0 120.0 120.0"  
+particlebias3 = "0 0 0"
+
+particleClass4 = "exorocket.light" 
+particleCount4 = 1              
+particleVeloc4 = "0 0 0"  
+particlebias4 = "0 0 150"
+
+
+particleClass5 = "exorocket.rkt" 
+particleCount5 = 1              
+particleVeloc5 = "0 0 0"  
+particlebias5 = "0 0 150"
+
+[xp]
+simulateBase = "sim_null"
+lifeTime = .25
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 510"
+finishColor = "255 255 255 510"
+startRadius = 7
+finishRadius = 7
+animateTime = .25
+
+[light]
+simulateBase = "sim_null"
+lifeTime = .25
+renderBase = "draw_light"
+startColor = "255 240 124 510"
+finishColor = "255 240 124 510"
+startRadius = 75
+finishRadius = 75
+animateTime = .25
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+lensflare = 0
+
+[xp2]
+simulateBase = "sim_null"
+renderBase = "draw_sprite"
+lifeTime = .25
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 240 124 275"
+finishColor = "255 240 124 275"
+startRadius = 10
+finishRadius = 10
+animateTime = .25
+
+[spark]
+simulateBase = "sim_smoke"
+lifeTime = .2
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "exorocket.flare"
+renderName2 = "exorocket.trail"
+
+[flare]
+simulateBase = "sim_null"
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 240 124 275"
+finishColor = "255 240 124 275"
+startRadius = 1.2
+finishRadius = .5
+animateTime = .2
+
+[trail]
+simulateBase = "sim_null"
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = .004
+startColor = "255 255 200 510"
+finishColor = "255 155 0 0"
+startRadius = .1
+finishRadius = .1
+trailTime = 1.5
+segmentTime = .2
+
+[rkt]
+simulateBase = "sim_ember"
+lifeTime = 3.0
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "exorocket.shell"
+renderName2 = "exorocket.spark1"
+
+[shell]
+simulateBase = "sim_null"
+lifeTime = 3.0
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "exorocket.flare1"
+renderName2 = "exorocket.light1"
+renderName3 = "exorocket.flicker"
+
+[flare1]
+simulateBase = "sim_null"
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 215 55 510"
+finishColor = "255 215 55 510"
+startRadius = 4
+finishRadius = .4
+animateTime = 3.0
+
+[light1]
+simulateBase = "sim_null"
+renderBase = "draw_light"
+startColor = "255 240 124 510"
+finishColor = "255 240 124 255"
+startRadius = 30
+finishRadius = 3
+animateTime = 3.0
+attenuateConstant = 0.0
+attenuateLinear = 0.0
+attenuateQuadratic = 0.0
+lensflare = 0
+
+[flicker]
+simulateBase = "sim_null"
+renderBase = "draw_emit"
+lifeTime = 2.5
+emitName = "exorocket.flicker1"
+emitDelay = 0.1
+emitDelayVar = 0.1
+emitVelocity = "0 0 0"
+emitVariance = "0 0 0"
+emitInherit = "0.0 0.0 0.0"
+
+[flicker1]
+simulateBase = "sim_null"
+lifeTime = .075
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "exorocket.flare2"
+renderName2 = "exorocket.light2"
+
+
+[flare2]
+simulateBase = "sim_null"
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 215 55 765"
+finishColor = "255 215 55 765"
+startRadius = 6
+finishRadius = 6
+animateTime = .075
+
+[light2]
+simulateBase = "sim_null"
+renderBase = "draw_light"
+startColor = "255 240 124 765"
+finishColor = "255 240 124 510"
+startRadius = 55
+finishRadius = 55
+animateTime = .075
+attenuateConstant = 0.0
+attenuateLinear = 0.0
+attenuateQuadratic = 0.0
+lensflare = 0
+
+[spark1]
+simulateBase = "sim_null"
+renderBase = "draw_emit"
+lifeTime = 2.5
+emitName = "exorocket.spark2"
+emitDelay = 0.025
+emitDelayVar = 0.025
+emitVelocity = "0 0 0"
+emitVariance = "200 200 200"
+emitInherit = "0.0 0.0 0.0"
+
+[spark2]
+simulateBase = "sim_smoke"
+lifeTime = .2
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "exorocket.flarea"
+renderName2 = "exorocket.traila"
+
+[flarea]
+simulateBase = "sim_null"
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 240 124 275"
+finishColor = "255 240 124 275"
+startRadius = .5
+finishRadius = .5
+animateTime = .05
+
+[traila]
+simulateBase = "sim_null"
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = .004
+startColor = "255 255 200 510"
+finishColor = "255 155 0 0"
+startRadius = .08
+finishRadius = .08
+trailTime = .08
+segmentTime = .025

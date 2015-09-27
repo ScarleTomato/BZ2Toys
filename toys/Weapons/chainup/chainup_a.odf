@@ -1,0 +1,31 @@
+[OrdnanceClass]
+classLabel = "grenade"
+shotGeometry = NULL
+
+xplGround = "xbulgnd"
+xplVehicle = "xbulcar"
+xplBuilding = "xbulbld"
+
+renderName = "chainup_a.render"
+
+ammoCost = 2.5
+lifeSpan = 1e3
+shotSpeed = 70.0
+
+damageValue(N) = 60 // 15 // none // 300
+damageValue(L) = 54 // 13.5 // light // 270
+damageValue(H) = 50 // 12.5 // heavy // 250
+
+damageValue(S) = 54 // 13.5 // standard // 270
+damageValue(D) = 40 // 10 // deflection // 200
+damageValue(A) = 60 // 15 // absorbtion // 300
+
+[Render]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "trail.tga"
+startColor = "255 127 0 255"
+finishColor = "255 127 0 0"
+startRadius = 0.02
+finishRadius = 0.05
+segmentTime = 0.05

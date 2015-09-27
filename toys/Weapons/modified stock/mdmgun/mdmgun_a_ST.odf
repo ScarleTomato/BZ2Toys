@@ -1,0 +1,39 @@
+[OrdnanceClass]
+classLabel = "grenade"
+
+shotGeometry = "ioartl00.xsi"
+shotSound = "crckt02.wav"
+
+xplGround = "xgasxpl"
+xplVehicle = "xgasxpl"
+xplBuilding = "xgasxpl"
+xplExpire = "xgasxpl"
+
+renderName = "mdmgun.render"
+
+ammoCost = 60
+lifeSpan = 1e6
+shotSpeed = 70.0
+
+damageValue(N) = 900
+damageValue(L) = 750
+damageValue(H) = 600
+
+damageValue(S) = 750
+damageValue(D) = 600
+damageValue(A) = 900
+
+[Render]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "180 180 180 32"
+finishColor = "255 255 255 0"
+startRadius = 0.6
+finishRadius = 2.4
+animateTime = 3.0
+rotationRate = 2.0
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 3.0

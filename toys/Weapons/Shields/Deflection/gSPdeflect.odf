@@ -1,0 +1,22 @@
+[WeaponClass]
+classLabel = "shieldup"
+ordName = NULL
+wpnName = "Deflection"
+fireSound = "gphan00.wav"
+wpnReticle = "gdeflect"
+wpnPriority = 0
+wpnCategory = "SPEC"
+
+[ShieldUpgradeClass]
+shieldClass = "D"
+
+animateTime = 1.0
+colorRange = 0.7
+scaleStart = 0.2
+scaleFinish = 1.0
+
+// [white->yellow->red]
+texturename = "ring.tga"
+startColor = "255 255 100 10"
+middleColor = "255 190 0 90"
+finishColor = "255 0 0 0"

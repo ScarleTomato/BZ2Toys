@@ -1,0 +1,22 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotSound = "igtow04.wav"
+xplGround = "xsupergnd"
+xplVehicle = "xsupercar"
+xplBuilding = "xsuperbld"
+
+renderName = "spstab_a.render"
+
+ammoCost = 30
+lifeSpan = 2.0
+shotSpeed = 100.0
+
+damageValue(N) = 150 // none // 300 + 100
+damageValue(L) = 120 // light // 240 + 70
+damageValue(H) = 50 // heavy // 100 + 50
+
+damageValue(S) = 120 // standard // 240 + 50
+damageValue(D) = 100 // deflection // 300 + 100
+damageValue(A) = 150 // absorbtion // 200 + 50

@@ -1,0 +1,11 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Fountain"
+fireSound = "cricket.wav"
+wpnReticle = "gflare"
+wpnPriority = 1
+wpnCategory = "SPEC"
+
+[DispenserClass]
+shotDelay = 0.0
+objectClass = "bugL"

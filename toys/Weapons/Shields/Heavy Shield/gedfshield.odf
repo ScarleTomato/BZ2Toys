@@ -1,0 +1,22 @@
+[WeaponClass]
+classLabel = "shieldup"
+ordName = NULL
+wpnName = "Heavy Shield"
+fireSound = "gphan00.wav"
+wpnReticle = "gshield"
+wpnPriority = 0
+wpnCategory = "SPEC"
+
+[ShieldUpgradeClass]
+shieldClass = "H"
+
+animateTime = 1.2
+colorRange = 0.5
+scaleStart = 0.2
+scaleFinish = 1.0
+
+// [white->cyan->blue]
+textureName = "bulhit.tga"
+startColor = "255 255 255 10"
+middleColor = "0 200 255 110"
+finishColor = "0 0 255 0"

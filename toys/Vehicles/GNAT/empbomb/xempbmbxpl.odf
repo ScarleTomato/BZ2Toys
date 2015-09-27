@@ -1,0 +1,131 @@
+// =================
+// UPGRADED POWER EXPLOSION - CREATED BY GENERAL BLACKDRAGON
+// =================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 4
+
+particleClass1 = "xempbmbxpl.shock1"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xempbmbxpl.shock2"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xempbmbxpl.ring"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xempbmbxpl.xring"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+explSound = "xempgen.wav"
+damageRadius = 0.0//60.0
+damageValue(N) = 0//1000
+damageValue(L) = 0//700
+damageValue(H) = 0//400
+damageValue(S) = 0//700
+damageValue(D) = 0//1000
+damageValue(A) = 0//400
+kickRadius = 0.0//180.0
+kickOmega = 0.0//5.0
+kickVeloc = 0.0//25.0
+
+[Shock1]
+StartDelay = 0//1.0
+simulateBase = "sim_smoke"
+lifeTime = 3.5//1.5
+renderBase = "draw_emit"
+emitName = "xgenxpl.shock1a"
+emitDelay = 4.0
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Shock1a]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "50 50 255 100"
+finishColor = "255 255 255 63"
+startRadius = 0.0
+finishRadius = 100.0
+animateTime = 0.5
+latitudeBands = 8
+longitudeSegments = 16
+
+[Shock2]
+StartDelay = 0.5//1.5
+simulateBase = "sim_smoke"
+lifeTime = 4.0//2.0
+renderBase = "draw_emit"
+emitName = "xgenxpl.shock2a"
+emitDelay = 5.0
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Shock2a]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 63"
+finishColor = "150 150 200 0"
+startRadius = 100.0
+finishRadius = 180.0
+animateTime = 0.5
+latitudeBands = 8
+longitudeSegments = 16
+
+[Ring]
+StartDelay = 0//1.0
+simulateBase = "sim_smoke"
+lifeTime = 4.0//2.0
+renderBase = "draw_emit"
+emitName = "xgenxpl.ring1a"
+emitDelay = 5.0
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Ring1a]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_planar"
+textureName = "ring.tga"	//"cvxpl01.tga"
+textureBlend = "one one modulate"
+startColor = "155 155 255 255"
+finishColor = "150 150 255 0"
+startRadius = 10.0
+finishRadius = 200.0
+animateTime = 1.0
+
+[XRing]
+StartDelay = 0//1.0
+simulateBase = "sim_smoke"
+lifeTime = 4.0//2.0
+renderBase = "draw_emit"
+emitName = "xgenxpl.xring1a"
+emitDelay = 5.0
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[xRing1a]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_wave"
+textureName = "wave.tga"
+textureBlend = "one one modulate"
+startColor = "50 200 250 255"
+finishColor = "170 200 250 0"
+startRadius = 0.0
+finishRadius = 200.0
+animateTime = 1.0
+waveAngle = 3.6//5
+waveDepth = 0.6 //.5
+waveSegments = 16 //32

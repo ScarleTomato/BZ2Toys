@@ -1,0 +1,41 @@
+[GameObjectClass]
+geometryName = "ibsplat.xsi"
+classLabel = "supplydepot"
+collisionRadius = 1.0
+scrapCost = 50
+scrapValue = 3
+maxHealth = 2000
+maxAmmo = 0
+unitName = "Service Platform"
+isAssault = 0
+isSingle = 0
+
+upgradeName = ibsplup_ST
+
+armorClass = H
+
+buildSupport = "A"
+buildRequire = "A"
+
+requireCount = 2
+requireName1 = "ibsbay"
+requireText1 = "Build Service Bay"
+requireName2 = "ibtcen"
+requireText2 = "Build Tech Center"
+
+[PoweredBuildingClass]
+detectRange = 100
+
+[BuildingClass]
+tunnelCount = 1
+
+tunnel01X0 = 1
+tunnel01Z0 = 1
+tunnel01Dx = 4
+tunnel01Dz = 4
+tunnel01Edge = "twwt"
+
+[SupplyDepotClass]
+supplyRange = 30.0
+supplyRate = 100.0
+supplySound = "mnu_empt.wav"

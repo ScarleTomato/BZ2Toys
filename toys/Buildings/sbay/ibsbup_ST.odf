@@ -1,0 +1,30 @@
+[GameObjectClass]
+classLabel = "ibsbay"
+unitName = "Service Bay"
+
+/////// REQUIREMENTS ///////////////
+
+requireCount = 1
+requireName1 = "iblbay"
+requireText1 = "Build Supply Depot"
+
+////////////////////////////////////
+
+lightHard3 = "hp_light_3"
+lightName3 = "spotorange"
+lightHard4 = "hp_light_4"
+lightName4 = "spotorange"
+
+[SupplyDepotClass]
+supplyRange = 40.0
+supplyRate = 250.0
+localAmmoRate = 30.0
+supplySound = "mnu_empt.wav"
+
+// Individual classification tweakers
+serviceSTs = 1
+serviceCraft = 1
+serviceBuildings = 0
+servicePilots = 1
+serviceOther = 0
+

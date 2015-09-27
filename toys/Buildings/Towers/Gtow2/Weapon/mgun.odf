@@ -1,0 +1,82 @@
+[OrdnanceClass]
+classLabel = "grenade"
+
+shotGeometry = NULL
+shotSound = "igtow04.wav"
+xplGround = "xmplasgnd_c"
+xplVehicle = "xmplascar_c"
+xplBuilding = "xmplasbld_c"
+
+renderName = "mgun.render"
+
+ammoCost = 30
+lifeSpan = 1e3
+shotSpeed = 100.0
+
+damageValue(N) = 150 // none // 300 + 100
+damageValue(L) = 120 // light // 240 + 70
+damageValue(H) = 50 // heavy // 100 + 50
+
+damageValue(S) = 120 // standard // 240 + 50
+damageValue(D) = 150 // deflection // 300 + 100
+damageValue(A) = 100 // absorbtion // 200 + 50
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "mgun.light"
+renderName2 = "mgun.flame"
+renderName3 = "mgun.smoke"
+renderName4 = "mgun.trail"
+
+[Light]
+renderBase = "draw_light"
+startColor = "80 80 255 500"
+finishColor = "80 80 255 500"
+startRadius = 25.0
+finishRadius = 25.0
+animateTime = 0.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "blast.tga"
+textureBlend = "one one modulate"
+startColor = "80 80 255 127"
+finishColor = "0 0 255 0"
+startRadius = 0.2
+finishRadius = 0.1
+animateTime = 0.1
+rotationRate = 10.0
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 0.1
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "blast.tga"
+textureBlend = "one one modulate"
+startColor = "80 80 255 31"
+finishColor = "0 0 255 0"
+startRadius = 0.3
+finishRadius = 1.0
+animateTime = 0.1
+rotationRate = 10.0
+emitDelay = 0.005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 0.1
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "smoke2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.01
+startColor = "80 80 255 127"
+finishColor = "0 0 255 0"
+startRadius = 0.1
+finishRadius = 0.0
+segmentTime = 0.2

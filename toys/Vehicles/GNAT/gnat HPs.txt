@@ -1,0 +1,12 @@
+HP_light_1
+HP_light_2
+HP_emit_1 //At the burners
+HP_emit_2
+HP_emit_3
+HP_cannon_1 //Main body
+HP_gun_1 //Left Wing
+HP_gun_2 //Right Wing
+HP_rocket_1 //Main Body
+HP_rocket_2 //Left Wing
+HP_rocket_3 //Right wing
+HP_special_1

@@ -1,0 +1,43 @@
+[GameObjectClass]
+
+LeaveExplodeScorch = false
+allowMDMCollisionDetonation = 1
+
+geometryName = "ibbase00.xsi"
+classLabel = "silo"
+scrapCost = 10
+scrapValue = 5
+maxHealth = 500
+maxAmmo = 0
+unitName = "Drop-Off Plate"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 0.0
+isAssault = 1
+
+canDetect = 1
+canInteract = 1
+canTarget = true
+canDemolish = 1
+
+BuildRequire = N
+//BuildSupport = B
+
+armorClass = H
+
+requireCount = 0
+
+provideCount = 1
+provideName1 = "ibbase66"
+
+[BuildingClass]
+soundAmbient = "iext01.wav"
+justTerrain = 1
+justFlat = 1
+
+[SiloClass]
+initDelay = 0.0 // How long before produces first scrap.
+scrapDelay = 0.0 // How long between scrap after first is created.
+scrapHold = 0 // Scrap capacity. 
+detectRange = 100

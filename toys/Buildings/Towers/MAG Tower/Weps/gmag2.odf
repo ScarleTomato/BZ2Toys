@@ -1,0 +1,27 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gmaggun_a"
+ordName = "charge2_a"
+wpnName = "MAG II"
+fireSound = "mag03.wav"
+wpnReticle = "gmaggun.2"
+wpnCategory = "CANN"
+isAssault = 0
+flashName = "gplasma_c.flash"
+aiRange = 200
+
+[CannonClass]
+shotDelay = 0.15 // 2/sec
+shotAlternate = 1
+
+[Flash]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 80 127"
+finishColor = "0 255 0 0"
+startRadius = 1.0
+finishRadius = 0.5
+animateTime = 0.1
+latitudeBands = 8
+longitudeSegments = 16

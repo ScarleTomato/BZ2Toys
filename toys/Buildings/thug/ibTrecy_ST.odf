@@ -1,0 +1,73 @@
+[GameObjectClass]
+classLabel = "ibrecy_m"
+upgradeName = "ivtrecy_st"
+
+limitClass1 = "VIRTUAL_CLASS_RECYCLERBUILDING" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 1
+limitClass1Text = "Only One Allowed"
+
+limitClass2 = "VIRTUAL_CLASS_THUG_RECYCLERBUILDING" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass2Count = 1
+limitClass2Text = "Only One Allowed"
+
+/////// PROVIDES ///////////////////
+
+provideCount = 8
+provideName3 = "ibTrecy"
+provideName4 = "VIRTUAL_CLASS_RECYCLER"
+provideName5 = "VIRTUAL_CLASS_THUG_RECYCYER"
+provideName6 = "VIRTUAL_CLASS_RECYCLERBUILDING"
+provideName7 = "VIRTUAL_CLASS_THUG_RECYCLERBUILDING"
+provideName8 = "ibbomb"
+
+////////////////////////////////////
+
+/////// OBJECT LIMITS //////////////
+
+limitClass1 = "VIRTUAL_CLASS_RECYCLERBUILDING" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 1
+limitClass1Text = "Only One Allowed"
+
+////////////////////////////////////
+
+[PoweredBuildingClass]
+
+[BuildingClass]
+
+[FactoryClass]
+WeaponConfig = "iweapon_ST.odf"
+buildItem4 = "ivtug_ST"
+buildItem9 = "ivping"
+
+[BuildGroup1]
+buildLabel = "Scavengers"
+buildItem1 = "ivTscav"
+buildItem2 = "ivShscav"
+[BuildGroup2]
+buildlabel = "Light units"
+buildItem1 = "ivscout_ZA"
+buildItem2 = "ivscout"
+buildItem3 = "ivmbike"
+buildItem4 = "ivmisl"
+buildItem5 = "ivgnat"
+buildItem6 = "ivgna2a"
+[BuildGroup3]
+buildlabel = "Defences"
+buildItem1 = "ivturr"
+buildItem2 = "ivgtow"
+[BuildGroup5]
+buildLabel = "Constructors"
+buildItem1 = "ivTcons_ST"
+buildItem2 = "ivconsGH2b"
+[BuildGroup6]
+buildlabel = "Service Trucks"
+buildItem1 = "ivserv"
+buildItem2 = "ivservcmd"
+buildItem3 = "ivservins"
+buildItem4 = "ivhserv_ST"
+
+[RecyclerClass]
+scrapDelay = 6.0 // # of seconds before +1 scrap (2x the delay of ibrecy)
+RequiresExtractor = false // true: requires extractor to generate scrap
+
+[Lod1]

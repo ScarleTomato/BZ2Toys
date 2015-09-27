@@ -1,0 +1,115 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "dualshot01"
+wpnName = "Gun Battery"
+fireSound = "303batfire.wav"
+wpnReticle = "gatstab"
+wpnCategory = "CANN"
+isAssault = 0
+flashName = "g303bat.flash"
+aiRange = 500
+
+[CannonClass]
+shotDelay = 3 // 2/sec
+shotVariance = .05
+salvoCount = 8
+salvoDelay = .2
+
+[flash]
+renderBase = "draw_multi"
+renderCount = 7
+renderName1 = "g303bat.e1"
+renderName2 = "g303bat.e2"
+renderName3 = "g303bat.e3"
+renderName4 = "g303bat.e6"
+renderName5 = "g303bat.e7"
+renderName6 = "g303bat.e8"
+renderName7 = "g303bat.smoke"
+
+[e1]
+renderBase = "draw_geom"
+textureName = "muz2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 120 0 100"
+startRadius = 5.0
+finishRadius = 1.0
+animateTime = 0.1
+geomName = "g_fflash.xsi"//sflash
+
+[e2]
+renderBase = "draw_geom"
+textureName = "muz2.tga"
+textureBlend = "one one modulate"
+startColor = "255 150 100 255"
+finishColor = "255 150 0 255"
+startRadius = 7.0
+finishRadius = 1.2
+animateTime = 0.13
+geomName = "g_fflash.xsi"//sflash
+
+[e3]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "g303bat.shell"
+emitDelay = 0.15
+//emitVelocity = "3.0 3.0 0.0"//.4 0 0
+//emitVariance = "0.5 0.5 0.5"// .5 .5 .5
+[shell]
+simulateBase = "sim_ember"
+lifeTime = 20.5
+renderBase = "draw_twirl"
+textureName = "shell.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 1.0
+finishRadius = 1.0
+animateTime = 2.5
+rotationRate = 0.1
+
+[e6]
+renderBase = "draw_geom"
+textureName = "muzfir.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 150 0 100"
+startRadius = 8.0
+finishRadius = 1.8
+animateTime = 0.1
+geomName = "g_sflash.xsi"//sflash
+
+[e7]
+renderBase = "draw_geom"
+textureName = "muzfir.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 155 255"
+finishColor = "255 0 0 100"
+startRadius = 7.0
+finishRadius = 1.2
+animateTime = 0.11
+geomName = "g_sflash.xsi"//sflash
+
+[e8]
+simulateBase = "sim_null"
+lifeTime = 0.9
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"//lightflare.tga
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 150 0 100"
+startRadius = 2.0
+finishRadius = 2.0
+animateTime = 0.9
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor =   "70 70 70 108" //"153 153 153 128"
+finishColor = "153 153 153 0"
+startRadius = 1.0
+finishRadius = 10.0
+animateTime = 2.0
+emitLife = 2.0

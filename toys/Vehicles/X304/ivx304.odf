@@ -1,0 +1,180 @@
+[GameObjectClass]
+baseName = "ivx304"
+geometryName = "ivx304.xsi"
+geometryScale = 0.7
+boxCollide = 1
+geometryName = "ivcons_skel.xsi"
+classLabel = "sav"
+scrapValue = 90
+scrapCost = 200
+customCost = 165
+buildTime = 50.0
+customTime = 50.0
+maxHealth = 30000
+maxAmmo = 20000
+addAmmo = 50
+addhealth = 50
+unitName = "X-304 Dedalus"
+aiName = "SAVFriend"
+aiName2 = "SAVEnemy"
+powercost = 20
+needPilot = 1
+
+heatSignature = 20.5
+imageSignature = 20.5
+radarSignature = 20.5
+isAssault = 1
+armorClass = H
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivx304.render"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivx304.render"
+
+requireCount = 0
+/////// weapons ///////////////////
+
+weaponMask = 00011
+
+weaponHard1 = "HP_CANNON_1" //Gun Battery
+weaponName1 = "g303bat"
+weaponAssault1 = 1
+weaponHard2 = "HP_CANNON_2" //Gun Battery
+weaponName2 = "g303bat"
+weaponAssault2 = 1
+weaponHard3 = "HP_ROCKET_1"  //Missles
+weaponName3 = "ogrocket"
+weaponAssault3 = 0
+weaponHard4 = "HP_ROCKET_2"  //Missles
+weaponName4 = "ogrocket"
+weaponAssault4 = 0
+weaponHard5 = "HP_SPECIAL_1" //Modified Force Field
+weaponName5 = "gdefshld"
+weaponAssault5 = 0
+
+////////////////////////////////////
+ 
+
+[CraftClass]
+rangeScan = 455.0f
+periodScan = 0.0f
+engageRange = 500
+
+braccelFactor = 0.05f;
+strafeFactor = 0.1f;
+steerFactor = 1.0f;
+omegaFactor = 0.4f;
+velFactor = 0.2f;
+
+avoidSpeed = 20;
+topSpeed = 40;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+attackTask = "ArtlAttack"
+subAttackTask = "ArtlSubAttack"
+subAttackClass = "AD"
+
+[HoverCraftClass]
+velocForward = 12.0 // [35]
+velocReverse = 8.0 // [10]
+velocStrafe = 5.5 // [20.5]
+accelThrust = 20.0 // acceleration [20.]
+accelBrake = 75.0 // braking
+accelDragStop = 1.0 // how fast it stops once hands are off controls [5.9]
+accelJump = 200.0
+
+setAltitude = 65.5 // how high off the ground
+
+alphaTrack = 10.0 //springs speed it rights itself [5.]
+alphaDamp = 10.0 //shocks [5.]
+
+pitchPitch = 0.00 // nose up [.1]
+pitchThrust = 0.0 // nose down [.14]
+
+rollStrafe = 0.00 // rolls while strafing [2.]
+omegaSpin = 0.5 // spinning in place speed [2.2]
+omegaTurn = 0.2 // turning while moving speed [3.0]
+alphaSteer = 0.5 // how fast it responds to steering [4.9]
+rollSteer = 0.0 // rolls while steering [2.0]
+
+soundThrust = "avhraze0.wav"
+soundTurbo = "avhraze3.wav"
+
+[SavClass]
+flightAltitude = 300.0
+soundDeploy = "dropfall.wav"
+soundUndeploy = "dropleav.wav"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "ivx304.trail1"
+renderName2 = "ivx304.light"
+renderName3 = "ivx304.trail2"
+
+[Light]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "80 80 255 255" 
+finishColor = "50 50 200 200"
+startRadius = 40.5
+finishRadius = 40.5
+
+[trail1]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.4
+emitVelocity = "0.0 0.0 -35.0"
+emitVariance = "0.0 0.0 0.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 0.5
+textureName = "raindrop.tga"
+textureBlend = "one one modulate"
+startColor = "50 5 250 255"
+finishColor = "0 100 200 0"
+startRadius = 6.6
+finishRadius = 20
+animateTime = 0.7
+rotationRate = 2.0
+maxDist	= 140.0f
+maxRadii = 140.0f
+
+
+[trail2]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.02
+emitDelayVar = 0.03
+emitVelocity = "0.0 0.0 -30.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 0.4
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "20 5 255 255"
+finishColor = "100 100 150 100"
+startRadius = 4.6
+finishRadius = 20
+animateTime = 0.7
+rotationRate = 2.0
+maxDist	= 140.0f
+maxRadii = 140.0f

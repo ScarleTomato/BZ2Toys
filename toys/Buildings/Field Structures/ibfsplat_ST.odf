@@ -1,0 +1,12 @@
+[GameObjectClass]
+classLabel = "ibsplat"
+scrapCost = 0
+powerCost = 0
+buildTime = 400
+
+upgradeName = ""
+
+buildSupport = "F"
+buildRequire = "F"
+
+requireCount = 0

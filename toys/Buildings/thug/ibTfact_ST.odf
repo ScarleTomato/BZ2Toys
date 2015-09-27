@@ -1,0 +1,40 @@
+[GameObjectClass]
+classLabel = "ibTfact"
+
+[FactoryClass]
+WeaponConfig = "iweapon_ST.odf"
+buildItem7 = "ivTrecy_ST"
+buildItem8 = "fvfish"
+buildItem9 = ""
+buildItem10 = ""
+
+[BuildGroup4]
+buildLabel = "Heavy Units"
+buildItem1 = "ivhbtank"
+buildItem2 = "ivatank"
+buildItem3 = "ivrbomb_ST"
+buildItem4 = "ivrckt"
+buildItem5 = "ivwalk"
+
+[BuildGroup5]
+buildLabel = "Air Units"
+buildItem1 = "ivapc"
+buildItem2 = "ivgnat"
+
+[BuildGroup6]
+buildLabel = "Advanced Units"
+buildItem1 = "ivmbikem2"
+buildItem2 = "ivmislm2"
+buildItem3 = "ivtankm2"
+buildItem4 = "ivrcktGH"
+buildItem5 = "ivintcGH"
+buildItem6 = "ivphmisl"
+buildItem7 = "ivphtank"
+buildItem8 = "ivphtankm3"
+buildItem9 = "ivphtankm2"
+buildItem10 = "ivcomm"
+
+[BuildGroup9]
+buildLabel = ""
+
+[Lod1]

@@ -1,0 +1,55 @@
+//Dutch Boy's Communications Tower
+
+[GameObjectClass]
+geometryName = "sfibcom2.xsi"
+classLabel = "commbunker"
+baseName = "ibctow"
+collisionRadius = 1.0
+scrapCost = 100
+scrapValue = 50
+maxHealth = 4000
+addhealth = 20
+powerCost = -2
+maxAmmo = 0
+unitName = "DBs Tower"
+aiName = "CommTowerProcess"
+aiName2 = "CommTowerProcess"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+armorClass = H
+isSingle = 0
+
+//CategoryTypeOverride = 9         // Determines the key used to select the relay bunker
+//CanSelect = 1
+
+provideCount = 2
+provideName1 = "ibcbun"
+provideName2 = "ibctow"
+
+requireCount = 2
+requireName1 = "ibcbun"
+requireText1 = "Build Relay Bunker"
+requireName2 = "ibtcen"
+requireText2 = "Build Tech Center"
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_blue_nf"
+lightHard2 = "hp_light_2"
+lightName2 = "o_blue_nf"
+
+[BuildingClass]
+soundAmbient = "chatter6.wav"
+
+[PoweredBuildingClass]
+powerTap1 = "HP_TAP_1"
+powerName = "ibjamm"
+detectRange = 300
+
+[CommBunkerClass]
+rangeScan = 800
+periodScan = 0.5
+
+[Lod2]
+geometryName = "sibcomt2.xsi"
+distance = 50
