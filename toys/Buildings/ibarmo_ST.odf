@@ -9,10 +9,11 @@ buildItem3 = "apshdw_ST"
 buildItem4 = "applsbmb_ST"
 
 [ArmoryGroup5]
-//buildItem5 = "apfntn"
+buildItem5 = "apomrtr"
 
 [ArmoryGroup6]
 buildItem4 = "apffld"
+buildItem5 = "apbug"
 
 [ArmoryGroup7]
 builditem4 = "apjetp_ST"

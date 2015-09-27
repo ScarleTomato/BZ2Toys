@@ -1,8 +1,0 @@
-//Orbital Mortar Beacon by ScarleTomato
-
-[GameObjectClass]
-classLabel = "apflar"
-scrapCost = 100
-
-[WeaponPowerupClass]
-weaponName = "gomrtr"

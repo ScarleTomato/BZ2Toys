@@ -1,6 +1,6 @@
 [WeaponClass]
 classLabel = "dispenser"
-wpnName = "Fountain"
+wpnName = "Crickets"
 fireSound = "cricket.wav"
 wpnReticle = "gflare"
 wpnPriority = 1

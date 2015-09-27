@@ -13,3 +13,4 @@ lifeSpan = .1
 [FlareMineClass]
 payloadName = "bugm"
 triggerDelay = .1
+shotVariance = 5.0
