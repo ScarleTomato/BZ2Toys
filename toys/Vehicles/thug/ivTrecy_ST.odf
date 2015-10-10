@@ -1,5 +1,9 @@
 [GameObjectClass]
 classLabel = "ivTrecy"
 
+limitClass1 = "VIRTUAL_CLASS_THUG_RECYCLER" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 4
+limitClass1Text = "Only Four Allowed"
+
 [DeployBuildingClass]
 deployName = "ibTrecy_ST"

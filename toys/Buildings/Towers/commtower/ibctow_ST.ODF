@@ -20,8 +20,8 @@ radarSignature = 1.0
 armorClass = H
 isSingle = 0
 
-//CategoryTypeOverride = 9         // Determines the key used to select the relay bunker
-//CanSelect = 1
+CategoryTypeOverride = 4         // Determines the key used to select the relay bunker
+CanSelect = 1
 
 provideCount = 2
 provideName1 = "ibcbun"

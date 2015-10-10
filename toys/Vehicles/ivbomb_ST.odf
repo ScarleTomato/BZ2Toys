@@ -1,0 +1,7 @@
+[GameObjectClass]
+classLabel = "ivbomb"
+
+CategoryTypeOverride = 5         // Determines the key used to select the relay bunker
+CanSelect = 1
+needGroup = 0
+isGrouped = 0

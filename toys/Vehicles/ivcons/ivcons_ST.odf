@@ -10,7 +10,7 @@ buildItem4 = "ibarmo_ST"
 buildItem5 = "ibsbay_ST"
 buildItem7 = "ibtoytr"
 buildItem8 = "ibsplat"
-buildItem9 = "ibbombttb"
+buildItem9 = "ibbomb_ST"
 [BuildGroup6]
 buildlabel = "Defenses"
 buildItem1 = "ibgtow_ST"
