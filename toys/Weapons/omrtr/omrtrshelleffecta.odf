@@ -1,8 +1,0 @@
-//Orbital Mortar Beacon by ScarleTomato
-//spawner to create the mine so it can last longer than the life of the building
-
-[GameObjectClass]
-classLabel = "omrtrbeameffecta"
-
-[ObjectSpawnClass]
-spawnName = "omrtrshelleffectb"

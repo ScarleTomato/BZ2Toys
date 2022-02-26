@@ -1,9 +1,0 @@
-*.txt eol=crlf
-*.autoreg eol=crlf
-*.bzn eol=crlf
-*.cfg eol=crlf
-*.des eol=crlf
-*.inf eol=crlf
-*.ini eol=crlf
-*.odf eol=crlf
-*.trn eol=crlf

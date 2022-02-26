@@ -1,6 +1,0 @@
-[WeaponClass]
-ShowShotsRemaining = false
-classLabel = "ighjetp"
-
-[JetPackClass]
-ForwardThrust = 24.0

@@ -1,6 +1,0 @@
-[GameObjectClass]
-classLabel = "apjetp"
-unitName = "ISDF Thruster"
-
-[WeaponPowerupClass]
-weaponName = "igjetp_ST"

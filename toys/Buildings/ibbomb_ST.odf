@@ -1,5 +1,0 @@
-[GameObjectClass]
-classLabel = "ibbombttb"
-
-[BomberBayClass]
-bomberType = "ivbomb_ST"

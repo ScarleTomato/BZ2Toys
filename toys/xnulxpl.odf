@@ -1,6 +1,0 @@
-// ===================
-// NULL EXPLOSION
-// ===================
-
-[ExplosionClass]
-classLabel = "explosion"
