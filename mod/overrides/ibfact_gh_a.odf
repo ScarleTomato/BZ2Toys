@@ -1,0 +1,60 @@
+[GameObjectClass]
+classLabel = "ibfact"
+
+
+/////// PROVIDES ///////////////////
+provideCount = 2
+provideName1 = "ibfact"
+provideName2 = "VIRTUAL_CLASS_FACTORY"
+
+////////////////////////////////////
+
+[PoweredBuildingClass]
+
+[BuildingClass]
+
+[FactoryClass]
+
+[BuildGroup1]
+buildLabel = "Mortar Bikes"
+buildItem1 = "ivmbike"
+buildItem2 = "ivhmbike_gh"
+buildItem3 = "ivgnat"
+buildItem4 = "ivgnA2A"
+
+[BuildGroup2]
+buildLabel = "Missile Scouts"
+buildItem1 = "ivmisl"
+buildItem2 = "ivhmisl_gh_a"
+
+[BuildGroup3]
+buildLabel = "Tanks"
+buildItem1 = "ivtank"
+buildItem2 = "ivhtank_gh_a1"
+buildItem3 = "ivhtank_gh_a2"
+buildItem4 = "ivhtank_gh_a3"
+
+[BuildGroup4]
+buildLabel = "Rocket Tanks"
+buildItem1 = "ivlrckt_gh"
+buildItem2 = "ivrckt"
+buildItem3 = "ivhrckt_gh"
+
+[BuildGroup6]
+buildLabel = "Walkers"
+buildItem1 = "ivwalk"
+buildItem2 = "ivhwalk_gh"
+
+[BuildGroup9]
+buildLabel = "Advanced Units"
+buildItem1 = "ivintc"
+buildItem2 = "ivhmisl_gh_b"
+buildItem3 = "ivhtank_gh_b1"
+buildItem4 = "ivhtank_gh_b2"
+buildItem5 = "ivhtank_gh_c1"
+buildItem6 = "ivcomm_gh"
+buildEmptyItem6 = true
+buildItem7 = "ivartl_gh_a"
+buildItem8 = "ivartl_gh_b"
+
+[Lod1]

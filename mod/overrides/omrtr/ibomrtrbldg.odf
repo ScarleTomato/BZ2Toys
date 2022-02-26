@@ -1,0 +1,42 @@
+//Orbital Mortar Beacon by ScarleTomato
+//spawned invisible building so i can have two types of mines spawn
+//one for the beam signal effect and one to create the actual shell impacts
+
+[GameObjectClass]
+classLabel = "powered"
+geometryName = "igempmin00.xsi" //"ibpgenGHC00.xsi"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = ""
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+collisionRadius = 0
+explosionName = ""
+ 
+canDetect = 0
+canSelect = 0
+canInteract = 0
+powerCost = 0
+isStealth = 1
+ownsTerrain = 0
+cancollide = 0
+LeaveExplodeScorch = false
+
+[BuildingClass]
+lifespan = .5
+DoBettyLost = false // true : betty voice when this craft is lost
+
+UseCollapse = false 
+UseChunks = false
+UseExplosion = false
+
+
+[PoweredBuildingClass]
+powerTap1 = "HP_TAP_1"
+powerName1 = "omrtrbeameffecta"
+powerTap2 = "HP_TAP_1"
+powerName2 = "omrtrshelleffecta"
+detectRange = 100

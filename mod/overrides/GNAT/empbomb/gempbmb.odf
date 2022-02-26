@@ -1,0 +1,13 @@
+[WeaponClass]
+classLabel = "mortar"
+ordName = "empmrt"
+wpnName = "EMP Bomb"
+fireSound = "ghart00.wav"
+wpnReticle = "gresin"
+wpnCategory = "SPEC"
+isAssault = 0
+
+[CannonClass]
+shotDelay = 10.0
+salvoCount = 1
+shotPitch = -1

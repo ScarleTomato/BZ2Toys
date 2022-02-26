@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gjax"
+ordName = "mbmb"
+wpnName = "Mini Wrecker"
+fireSound = "mag07.wav"
+wpnReticle = "gsplint" //"gjax.0"
+wpnCategory = "SPEC"
+isAssault = 0
+aiRange = 20
+
+[CannonClass]
+shotDelay = 5.0
+shotVariance = 0.0
+shotPitch = 4.5

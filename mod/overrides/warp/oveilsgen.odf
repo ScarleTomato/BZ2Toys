@@ -1,0 +1,23 @@
+// ========================
+// Veils generator
+// Generator to create veil sandbags
+// ========================
+
+[OrdnanceClass]
+classLabel = "pulse"
+shotSound = NULL
+
+ammoCost = 0
+// Run this for 120 seconds
+lifeSpan = 120
+// dont allow the shooter to collide with this
+LifespanBeforeCollidesWithOwner = 120
+// don't go anywhere
+shotSpeed = 0
+
+[PulseShellClass]
+// immediately start generating
+pulseDelay = 0
+// generate a salvo every second
+pulsePeriod = 0.1
+xplPulse = "xveilgen"

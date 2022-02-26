@@ -1,0 +1,15 @@
+[OrdnanceClass]
+classLabel = "pulse"
+shotGeometry = "iostbp00.fbx"
+renderName = "plstab_c.render"
+// xplExpire = "xveilsgen"
+shotSound = NULL
+
+ammoCost = 100
+lifeSpan = 0.1001 // just a bit longer than the pulse delay
+shotSpeed = 3000
+
+[PulseShellClass]
+pulseDelay = 0.1 // (3000 * .1) = 300m away
+pulsePeriod = 1
+xplPulse = "xwarpgen"

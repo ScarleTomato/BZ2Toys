@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "owarpshell"
+wpnName = "Warp Window"
+fireSound = NULL // "gmagg06.wav"
+wpnReticle = "gplstab"
+wpnCategory = "SPEC"
+isAssault = 0
+aiRange = 100
+
+[CannonClass]
+shotDelay = 1.0
+shotAlternate = 1
+

@@ -1,0 +1,24 @@
+// ========================
+// Veils generator payload
+// Explosion the spawns a generator for the veil sandbags
+// ========================
+
+[ExplosionClass]
+classLabel = "quakeblast"
+
+damageRadius = 0.0
+
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[QuakeBlastClass]
+quakeCount = 10
+quakeClass = "oveilsgen"
+
+quakeMagnitude = 0.0f
+quakeTime = 0.0f

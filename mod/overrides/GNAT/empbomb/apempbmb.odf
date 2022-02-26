@@ -1,0 +1,18 @@
+[GameObjectClass]
+geometryName = "apshld00.xsi"
+classLabel = "wpnpower"
+scrapCost = 30
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+unitName = NULL
+aiName = "PowerUpProcess"
+
+requireCount = 0
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "gempbmb"

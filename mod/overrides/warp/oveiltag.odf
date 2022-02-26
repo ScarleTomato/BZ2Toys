@@ -1,0 +1,20 @@
+// ========================
+// Veils generator
+// Generator to create veil sandbags
+// ========================
+
+[OrdnanceClass]
+classLabel = "leader"
+shotSound = NULL
+RestoreFxSavegame = false
+RestoreFxLockstep = true
+RestoreFxVisual = false
+
+renderName = "oveiltag.render"
+
+ammoCost = 0
+lifeSpan = 2
+shotSpeed = 5
+
+[LeaderRoundClass]
+stickTime = 5.0

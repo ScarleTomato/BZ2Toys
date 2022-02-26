@@ -1,0 +1,12 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Orbital Beacon"
+fireSound = "mmine01.wav"
+wpnReticle = "gflare"
+wpnPriority = 1
+wpnCategory = "SPEC"
+localAmmo = 1
+
+[DispenserClass]
+shotDelay = 1
+objectClass = "omrtrmin"

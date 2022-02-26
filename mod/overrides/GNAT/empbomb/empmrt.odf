@@ -1,0 +1,5 @@
+[OrdnanceClass]
+classLabel = "splintbm"
+
+[SprayBombClass]
+payloadName = "ibempbmb"

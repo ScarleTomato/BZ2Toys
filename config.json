@@ -1,0 +1,12 @@
+{
+    "mods":[
+        {
+            "name":"Scarletomato's Toybox Recycler",
+            "folder":"mod",
+            "image":"logo.png",
+			"workshopid":"000",
+            "desc":"desc.txt",
+            "version":"v0.0.1"
+        }
+    ]
+}

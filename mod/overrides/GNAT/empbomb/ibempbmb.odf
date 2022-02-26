@@ -1,0 +1,55 @@
+[GameObjectClass] //First Jammer and item used to spawn the rest of the Effects. THIS IS SPAWNED ON TEAM 0!
+baseName = "ibpgenGHC"
+classLabel = "jammer"
+geometryName = "igempmin00.xsi"
+animCount = 1
+animName1 = "loop"
+animFile1 = "ibpgenGHC00.xsi"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = ""
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+collisionRadius = 0
+explosionName = "xempbmbxpl"
+// Scrap generated when this object goes boom. 
+ScrapClass1 = "npscr1" 
+ScrapClass2 = "npscr2" 
+ScrapClass3 = "npscr3" 
+canDetect = 0
+canSelect = 0
+canInteract = 0
+powerCost = 0
+isStealth = 1
+ownsTerrain = 1
+LeaveExplodeScorch = false
+
+[BuildingClass]
+lifespan = 1.0 //TIMER! Don't touch me without calibrating startdelay's in xgenxpl first!
+DoBettyLost = false // true : betty voice when this craft is lost
+
+UseCollapse = false 
+UseChunks = false
+UseExplosion = true
+
+
+[PoweredBuildingClass]
+powerTap1 = "HP_TAP_1"
+powerName1 = "ibpgeneffect1A" //Create the long term Jammer
+powerTap2 = "HP_TAP_1"
+powerName2 = "ibpgeneffect2A" //Create the Anchor Spray
+powerTap3 = "HP_TAP_1"
+powerName3 = "ibpgeneffect3A" //Create the Lockdown Spray
+detectRange = 100
+
+[JammerTowerClass]
+jammerRange = 200.0
+DampTeamFilter = 4 // 0 = all teams, 1 = same team only, 2 = allies, 3 = enemies, 4 = not same team
+JamScannerTeamFilter = 4 // 0 = all teams, 1 = same team only, 2 = allies, 3 = enemies, 4 = not same team
+
+[Lod1]
+geometryName = "" ;geometry for lod1
+distance = 64

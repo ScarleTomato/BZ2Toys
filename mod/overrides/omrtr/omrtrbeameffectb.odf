@@ -1,0 +1,31 @@
+//Orbital Mortar Beacon by ScarleTomato
+//Flare mine to create a beam of light going waaay up
+//supposedly to signal the carrier in orbit as to where to shoot the ordnance
+
+[GameObjectClass]
+geometryName = "igflar00.xsi"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 1000
+unitName = "Beam Generator"
+heatSignature = 0.0
+canDetect = 0
+canSelect = 0
+canCollide = 0
+canInteract = 0
+isStealth = 1
+LeaveExplodeScorch = false
+
+[MineClass]
+lifeSpan = 30.0
+
+[FlareMineClass]
+payloadName = "omrtrbeameffectc"
+fireSound = ""
+triggerDelay = 0.0
+shotDelay = 2.01
+shotVariance = 0.0
+damageRadius = 0.0
+kickRadius = 0.0

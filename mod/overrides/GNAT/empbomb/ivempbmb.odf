@@ -1,0 +1,23 @@
+[GameObjectClass]
+geometryName = "igmcur00.xsi"
+classLabel = "jammer"
+scrapCost = 50
+buildTime = 0.0
+unitName = "Ping"
+
+isAssault = 0
+
+armorClass = N
+
+explosionName = "xgenxpl"
+CanDropScrap = true
+ScrapClass1 = "ibpgeneffect1A"
+ScrapClass2 = "ibpgeneffect2A" 
+ScrapClass3 = "ibpgeneffect3A"
+
+[CraftClass]
+Lifespan = 1
+rangeScan = 1e6f
+periodScan = 0.0f
+
+[HoverCraftClass]

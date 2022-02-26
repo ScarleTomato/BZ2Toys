@@ -1,0 +1,139 @@
+[GameObjectClass]
+basename = "ivgnat"
+geometryName = "ivgnat00.xsi"
+cockpitName= "ivscout_cockpit.xsi"
+classLabel = "aircraft"
+scrapValue = 6
+scrapCost = 65
+customCost = 70
+buildTime = 10.0
+customTime = 12.0
+maxHealth = 300
+maxAmmo = 1200
+unitName = "Gnat Interceptor"
+unitIcon = "icon_ivgna2a.tga"
+aiName = "MorphTankFriend" 
+aiName2 = "TurretTankEnemy" 
+
+heatSignature = 1.0
+imageSignature = 3.0
+radarSignature = 7.0
+
+isAssault = 0
+
+requireCount = 2
+requireName1 = "ibbomb"
+requireText1 = "Build Bomber Bay"
+requireName2 = "ibctow"
+requireText2 = "Build Comm Tower"
+
+armorClass = N
+
+FactoryWeaponConfig = "ivgnat_weapon.odf"
+
+/////// weapons ///////////////////
+
+weaponMask = 00001
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "gbhyper"
+weaponAssault1 = 0
+weaponHard2 = "HP_GUN_1"
+weaponName2 = "gchain_c"
+weaponAssault2 = 0
+weaponHard3 = "HP_GUN_2"
+weaponName3 = "gchain_c"
+weaponAssault3 = 0
+weaponHard4 = "HP_special_1"
+weaponName4 = "gcbmb"
+weaponAssault4 = 0
+
+
+
+//////////////////////////////////
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivgna2a.trailer"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivgna2a.trailer"
+effectHard3 = "hp_emit_3"
+effectName3 = "ivgna2a.trailer"
+
+[CraftClass]
+rangeScan = 500.0f
+periodScan = 2.0f
+velocJam = 5.0f
+engageRange = 150
+
+braccelFactor = 0.05f;
+strafeFactor = 0.1f;
+steerFactor = 1.0f;
+omegaFactor = 0.4f;
+velFactor = 0.2f;
+
+avoidSpeed = 20;
+topSpeed = 30;
+
+selectWaitMsg = "ivgnat05.wav"
+selectAttackMsg = "ivgnat05.wav"
+selectFollowMsg = "ivgnat03.wav"
+selectGoMsg = "ivgnat01.wav"
+selectOtherMsg = "ivgnat15.wav"
+
+goMsg = "ivgnat04.wav"
+attackMsg = "ivgnat02.wav"
+followMeMsg = "ivgnat08.wav"
+followMsg = "ivgnat03.wav"
+repairMsg = "ivgnat04.wav"
+reloadMsg = "ivgnat04.wav"
+rescueMsg = "ivgnat10.wav"
+recycleMsg = "ivgnat11.wav"
+otherMsg = "ivgnat14.wav" 
+holdMsg = "ivgnat12.wav"
+user1Msg = ""  
+killedMsg = "ivgnat07.wav"
+diedMsg = ""
+
+[AirCraftClass]
+OverWaterFlying = false
+velocSet(L) = 40.0 // minimum velocity
+velocSet(M) = 100.0 // cruising velocity
+velocSet(H) = 200.0 // maximum velocity
+accelThrust = 45.7 // thrust acceleration
+accelBrake = 8.0 // brake acceleration
+accelDrag = 58.3 // drag acceleration
+omegaSteer(L) = 4.6 // steer turn rate at minimum
+omegaSteer(M) = 3.8 // steer turn rate at cruising
+omegaSteer(H) = 2.97 // steer turn rate at maximum
+omegaStrafe(L) = 3.0 // airbrake turn rate at minimum
+omegaStrafe(M) = 2.0 // airbrake turn rate at cruising
+omegaStrafe(H) = 1.0 // airbrake turn rate at maximum
+alphaSteer = 5.0 // steering angular acceleration
+alphaStrafe = 5.0 // airbrake angular acceleration
+minAltitude = 10.0 // minimum altitude
+maxAltitude = 500 // maximum altitude
+alphaLevel = 2.5 // leveling angular acceleration
+alphaDamp = 8.0 // damping angular acceleration
+pitchPitch = 3.0 // maximum pitch angle
+rollSteer = 2.2 // maximum roll angle from steering
+rollStrafe = 1.4 // maximum roll angle from airbraking
+timeDeploy = 3.3 // time to deploy
+timeUndeploy = 1.3 // time to undeploy
+soundDeploy = "GNATdep.wav"
+soundUndeploy = "GNATdep.wav"
+soundThrust = "ssent01j.wav"
+soundTurbo = ""
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "100 200 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.4
+finishRadius = 0.8
+segmentTime = 9.0
+animateTime = 0.3

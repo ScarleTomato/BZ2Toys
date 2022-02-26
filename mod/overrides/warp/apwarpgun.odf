@@ -1,0 +1,6 @@
+[GameObjectClass]
+classLabel = "apspecial"
+scrapCost = 100
+
+[WeaponPowerupClass]
+weaponName = "gwarpgun"
